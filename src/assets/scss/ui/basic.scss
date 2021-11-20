@@ -1,0 +1,27 @@
+.button-primary {
+  background-color: #3f51b5;
+  font-weight: 500;
+}
+.button-danger {
+  background-color: #af0c0c;
+}
+.button-important {
+  background-color: rgb(175, 110, 13);
+}
+.input {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 0.5em;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  &:focus {
+    outline: none;
+  }
+}
+
+.input-disabled {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-weight: 500;
+}

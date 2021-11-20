@@ -1,3 +1,4 @@
+@import "./ui/basic.scss";
 * {
   box-sizing: border-box;
 }
@@ -6,21 +7,29 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: 000;
 }
 
 .container {
   max-width: 1100px;
+  padding: 2rem 1rem;
 }
 .flex-row,
 .flex-col,
-.flex-center {
+.flex-center,
+.form-row,
+.form-col {
   display: flex;
 }
-.flex-col {
+.flex-col,
+.form-col {
   flex-direction: column;
 }
 .flex-center {
   justify-content: center;
   align-items: center;
+}
+.form-row {
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+  }
 }
